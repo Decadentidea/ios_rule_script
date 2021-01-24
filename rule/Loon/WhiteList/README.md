@@ -6,36 +6,25 @@
 
 定时爬取互联网上开源的白名单分流规则，将其进行清洗、去重、合并、优化后，形成单一的分流规则文件，旨在解决引用大量外部规则造成规则重复的问题。
 
-白名单指不应该被去广告分流规则屏蔽的网站，请将此分流规则置于去广告规则之前。
+**白名单指不应该被去广告分流规则屏蔽的网站，请将此分流规则置于去广告规则之前。**
 
 白名单分流规则中含有URL-REGEX类型，此类的规则对于HTTPS请求需要MITM使用才能生效。程序已默认根据正则推导一份MITM的模块/复写/插件在当前分流规则的目录中，便于参考搭配使用。
 
-最后检查时间：2020-12-08 03:34:41。
+最后检查时间：2021-01-24 03:18:15。
 
 ## 规则统计
 
-总计规则：22 条。
+总计规则：25 条。
 
 各类型规则统计：
 
 | 类型 | 数量(条) |
 | ---- | ---- |
-| DOMAIN-SUFFIX | 4 |
+| DOMAIN-SUFFIX | 5 |
 | DOMAIN-KEYWORD | 1 |
-| DOMAIN | 11 |
+| DOMAIN | 13 |
 | URL-REGEX | 2 |
 | USER-AGENT | 4 |
-## 重复统计
-
-白名单分流规则，与本项目其他分流规则重复情况统计。
-
-点击重复数量可以查看重复规则明细。
-
-| 名称 | 数量 | 重复 | 重合度 |
-| ---- | ---- | ---- | ------ |
-|  [AdvertisingLite](https://github.com/blackmatrix7/ios_rule_script/tree/master/rule/Loon/AdvertisingLite)    | 41837   | [1](https://github.com/blackmatrix7/ios_rule_script/tree/master/rule/Loon/WhiteList/Repeat.list)   |   0.0% |
-|  [China](https://github.com/blackmatrix7/ios_rule_script/tree/master/rule/Loon/China)    | 593   | [1](https://github.com/blackmatrix7/ios_rule_script/tree/master/rule/Loon/WhiteList/Repeat.list)   |   0.17% |
-|  [ChinaTest](https://github.com/blackmatrix7/ios_rule_script/tree/master/rule/Loon/ChinaTest)    | 73331   | [1](https://github.com/blackmatrix7/ios_rule_script/tree/master/rule/Loon/WhiteList/Repeat.list)   |   0.0% |
 ## 配置说明
 
 实时版：爬虫程序定时更新，更新频率高，能尽快同步数据源变化
@@ -51,32 +40,71 @@ https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Loon/
 
 https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/release/rule/Loon/WhiteList/WhiteList.list
 
+## 重复统计
+
+
+当前分流规则，未包含其他子规则。
+
+
+当前分流规则，与本项目其他分流规则重复情况统计(点击重复数量可查看明细)。
+
+
+
+| 名称 | 数量 | 重复 | 重合度 |
+| ---- | ---- | ---- | ------ |
+|  [China](https://github.com/blackmatrix7/ios_rule_script/tree/master/rule/Loon/China)    | 688   | [1](https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Loon/WhiteList/WhiteList_Repeat.list)   |   0.15% |
+|  [ChinaTest](https://github.com/blackmatrix7/ios_rule_script/tree/master/rule/Loon/ChinaTest)    | 71706   | [1](https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Loon/WhiteList/WhiteList_Repeat.list)   |   0.0% |
+|  [AdvertisingLite](https://github.com/blackmatrix7/ios_rule_script/tree/master/rule/Loon/AdvertisingLite)    | 25443   | [1](https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Loon/WhiteList/WhiteList_Repeat.list)   |   0.0% |
+|  [Advertising](https://github.com/blackmatrix7/ios_rule_script/tree/master/rule/Loon/Advertising)    | 56381   | [1](https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Loon/WhiteList/WhiteList_Repeat.list)   |   0.0% |
+### 特别说明
+程序在实际运算时，会根据DOMAIN、DOMAIN-SUFFIX、IP-CIDR、IP-CIDR6间的包含关系进行去重，而出于运行效率考虑，重复规则只统计纯文本匹配，所以可能与实际效果有所出入，仅供参考。
+
 ## 数据来源
 
 本项目的白名单分流规则的数据来自以下链接，通常已涵盖所有数据来源的分流规则。如果你正在使用这些分流规则，建议不要与本项目的白名单分流规则混合使用，以免造成规则重复。
 
 - https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/UnBan.list
+- https://raw.githubusercontent.com/DivineEngine/Profiles/master/Quantumult/Filter/Unbreak.list
 - https://raw.githubusercontent.com/DivineEngine/Profiles/master/Surge/Ruleset/Unbreak.list
 - https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/source/rule/WhiteList/WhiteList.list
+- https://raw.githubusercontent.com/sve1r/Rules-For-Quantumult-X/develop/Rules/Services/Unbreak.list
 
 
 感谢以上分流规则作者的辛勤付出（排名不分先后）。
 
 如果您有更好的分流规则，欢迎提交给我，我会将它加到数据源中继续完善。
 
+## 程序特点
+
+### 断链处理
+
+对于某些已删除或失效的数据源，继续使用本地缓存的文件，减少因为断链造成的影响。
+
+### 规则过滤
+
+通过关键字、正则、模糊匹配三种方式对规则进行过滤，以移除部分数据源中的错误规则。
+
+### 合并去重
+
+不仅对完全相同的规则进行去重，还会根据DOMAIN、DOMAIN-SUFFIX、IP-CIDR、IP-CIDR6等规则间的包含关系进行合并去重。
+
+### 域名解析
+
+对DOMAIN类型的规则进行DNS解析记录查询，丢弃连续多次无法解析的域名。
+
+### 正则合并
+
+通过程序对相似正则进行合并，不定时手动核验正则合并结果。
+
+### 正则推导
+
+通过程序对含有正则的规则，推导需要MITM的主机名，不定时手动核验推导结果。
+
+### 正则编译
+
+通过程序对正则类型的规则进行编译，去除无法通过编译的正则。
+
 ## 最后
-
-### 正则过滤
-
-爬虫程序在清洗原始规则数据时，可根据正则定向过滤规则，以达到保留特定规则的目的。经过正则过滤的规则，无法100%涵盖原始规则数据，请知悉。
-
-### 正则校验
-
-从2020年11月25日开始，爬虫程序加入对正则合法性的校验。对于无法校验通过，且不明作用的正则，直接抛弃。如果对比数据源发现正则类型的规则较少，则很大可能是错误的正则都已被过滤掉。
-
-### 黑名单
-
-爬虫程序内置部分规则黑名单，在对原始数据进行清洗时，自动将可能引起异常的黑名单规则去除。经过黑名单去除的规则，无法100%涵盖原始规则数据，请知悉。
 
 ### 完善规则
 
@@ -92,7 +120,7 @@ https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/release/rule/Loon
 
 感谢
 
-[@fiiir](https://github.com/fiiir) [@Tartarus2014](https://github.com/Tartarus2014) [@zjcfynn](https://github.com/zjcfynn) 
+[@fiiir](https://github.com/fiiir) [@Tartarus2014](https://github.com/Tartarus2014) [@zjcfynn](https://github.com/zjcfynn) [@chenyiping1995](https://github.com/chenyiping1995) 
 
 提供规则数据源及改进建议
 

@@ -1,25 +1,22 @@
-# 去广告
+# 复写去广告
 
 ## 前言
 
-本项目的去广告复写规则由爬虫程序自动维护。
+本项目的复写去广告复写规则由爬虫程序自动维护。
 
-定时爬取互联网上开源的去广告复写规则，将其进行清洗、去重、合并、优化后，形成单一的复写规则文件，旨在解决引用大量外部规则造成规则重复的问题。
+定时爬取互联网上开源的复写去广告复写规则，将其进行清洗、去重、合并、优化后，形成单一的复写规则文件，旨在解决引用大量外部规则造成规则重复的问题。
+
+**本复写插件不包含知乎和Youtube去广告规则。**
 
 
-
-
-最后检查时间：2020-12-08 03:34:47。
+最后检查时间：2021-01-24 03:18:47。
 
 ## 复写统计
 
 | 类型 | 数量(条) |
 | ---- | ---- |
-| mitm | 535 |
-| reject-img | 326 |
-| reject | 464 |
-| reject-dict | 2 |
-| reject-200 | 1 |
+| mitm | 553 |
+| reject | 793 |
 ## 配置说明
 
 实时版：爬虫程序定时更新，更新频率高，能尽快同步数据源变化
@@ -40,17 +37,20 @@ https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/release/rewrite/Q
 
 ## 数据来源
 
-本项目的去广告复写规则的数据来自以下链接，通常已涵盖所有数据来源的复写规则。如果你正在使用这些复写规则，请先删除后再使用本项目的去广告复写规则，以免造成规则重复。
+本项目的复写去广告复写规则的数据来自以下链接，通常已涵盖所有数据来源的复写规则。如果你正在使用这些复写规则，请先删除后再使用本项目的复写去广告复写规则，以免造成规则重复。
 
 - https://raw.githubusercontent.com/DivineEngine/Profiles/master/Quantumult/Rewrite/Block/Advertising.conf
 - https://raw.githubusercontent.com/DivineEngine/Profiles/master/Surge/Module/Block/Advertising.sgmodule
+- https://raw.githubusercontent.com/DivineEngine/Profiles/master/Surge/Shortcuts/reject.txt
+- https://raw.githubusercontent.com/GeQ1an/Rules/master/Loon/Rewrite/Rewrite.list
+- https://raw.githubusercontent.com/GeQ1an/Rules/master/QuantumultX/Rewrite/Rewrite.list
 - https://raw.githubusercontent.com/NobyDa/Script/master/QuantumultX/Rewrite_lhie1.conf
 - https://raw.githubusercontent.com/NobyDa/Script/master/Surge/Module/RewriteRules.sgmodule
 - https://raw.githubusercontent.com/Tartarus2014/For-own-use/master/Loon/Advertising.conf
 - https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/script/smzdm/smzdm_remove_ads.sgmodule
-- https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/source/rewrite/Advertising/advertising.lnplugin
-- https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/source/rewrite/Advertising/advertising.lnwrite
+- https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/source/rewrite/Advertising/advertising.qxrewrite
 - https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/source/rewrite/Advertising/advertising.sgmodule
+- https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/source/rewrite/Upgrade/Upgrade.qxrewrite
 - https://raw.githubusercontent.com/eHpo1/Rules/master/Loon/Rewrite.conf
 - https://raw.githubusercontent.com/eHpo1/Rules/master/QuantumultX/Rewrite.txt
 
@@ -59,13 +59,43 @@ https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/release/rewrite/Q
 
 如果你有更好的复写规则，欢迎提交给我，我会将它加到数据源中继续完善。
 
+## 程序特点
+
+### 断链处理
+
+对于某些已删除或失效的数据源，继续使用本地缓存的文件，减少因为断链造成的影响。
+
+### 规则过滤
+
+通过关键字、正则、模糊匹配三种方式对规则进行过滤，以移除部分数据源中的错误规则。
+
+### 合并去重
+
+不仅对完全相同的规则进行去重，还会根据DOMAIN、DOMAIN-SUFFIX、IP-CIDR、IP-CIDR6等规则间的包含关系进行合并去重。
+
+### 域名解析
+
+对DOMAIN类型的规则进行DNS解析记录查询，丢弃连续多次无法解析的域名。
+
+### 正则合并
+
+通过程序对相似正则进行合并，不定时手动核验正则合并结果。
+
+### 正则推导
+
+通过程序含有正则的规则，推导需要MITM的主机名，不定时手动核验推导结果。
+
+### 正则编译
+
+通过程序对正则类型的规则进行编译，去除无法通过编译的正则。
+
 ## 最后
 
 ### 去广告问题
 
-本项目的去广告规则仅是将网络上开源的去广告规则整合去重，**非实际规则维护者**。数据源规则无法去除的广告，本项目的去广告规则也无能为力。
+本项目的复写去广告规则仅是将网络上开源的去广告规则整合去重，**非实际规则维护者**。数据源规则无法去除的广告，本项目的复写去广告规则也无能为力。
 
-所以很抱歉，没办法处理关于某个APP无法去除广告的反馈，除非您能明确数据源的规则可以去除，而整合后的规则无法去除。同样，也没办法协助您处理去广告规则误拦截的问题，除非您能明确告知哪条规则存在问题，我会将其加入规则黑名单，下次爬虫程序更新时将其去除。
+所以很抱歉，没办法处理关于某个APP无法去除广告的反馈，除非您能明确数据源的规则可以去除，而整合后的规则无法去除。同样，也没办法协助您处理复写去广告规则误拦截的问题，除非您能明确告知哪条规则存在问题，我会将其加入规则黑名单，下次爬虫程序更新时将其去除。
 
 ### 特定APP去广告
 
@@ -81,30 +111,6 @@ https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/release/rewrite/Q
 
 本规则不包含YouTube去广告，请自行寻找其他解决方案。
 
-### 脚本处理
-
-去广告复写规则已将所有涉及脚本处理的复写去除，请知悉。
-
-### 正则合并
-
-爬虫程序除对完全一样的正则表达式进行去重外，还会通过算法对较为相似的正则进行去重合并。目前算法初步初步过滤600多条相似的正则。但因为正则表达式的复杂性，算法无法100%精确过滤所有重复正则，并可能误过滤一些相似但并不重复的正则。如果你在使用中，发现以上的情况，欢迎通过[issues](https://github.com/blackmatrix7/ios_rule_script/issues/new)提交反馈。
-
-### 正则校验
-
-从2020年11月25日开始，爬虫程序加入对正则合法性的校验。对于无法校验通过，且不明作用的正则，直接抛弃。如果对比数据源发现正则类型的规则较少，则很大可能是错误的正则都已被过滤掉。
-
-### MITM
-
-爬虫程序除保留数据源中的MITM主机名外， 还会通过算法，根据正则反推部分主机名，用于补充数据源中可能遗漏的MITM主机名。但因为正则表达式的复杂性，算法无法100%反推所有的正确主机名。如果你在使用中，发现主机名错误的情况，欢迎通过[issues](https://github.com/blackmatrix7/ios_rule_script/issues/new)提交反馈。
-
-### 正则过滤
-
-爬虫程序在清洗原始复写数据时，可根据正则定向过滤规则，以达到保留特定复写的目的。经过正则过滤的复写，无法100%涵盖原始复写数据，请知悉。
-
-### 黑名单
-
-爬虫程序内置部分复写黑名单，在对原始数据进行清洗时，自动将可能引起异常的黑名单复写去除。经过黑名单去除的复写，无法100%涵盖原始复写数据，请知悉。
-
 ### 完善复写
 
 如果你：
@@ -115,10 +121,10 @@ https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/release/rewrite/Q
 4. 在使用复写规则时出现异常
 5. 有其他问题
 
-欢迎通过[issues](https://github.com/blackmatrix7/ios_rule_script/issues/new)提交反馈，共同完善本项目的去广告复写规则。
+欢迎通过[issues](https://github.com/blackmatrix7/ios_rule_script/issues/new)提交反馈，共同完善本项目的复写去广告复写规则。
 
 感谢
 
-[@Tartarus2014](https://github.com/Tartarus2014)
+[@Tartarus2014](https://github.com/Tartarus2014)  [@chenyiping1995](https://github.com/chenyiping1995) 
 
 提供规则数据源及改进建议

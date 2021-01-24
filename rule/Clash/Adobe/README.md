@@ -8,8 +8,7 @@
 
 
 
-
-最后检查时间：2020-12-08 03:34:42。
+最后检查时间：2021-01-24 03:18:28。
 
 ## 规则统计
 
@@ -22,23 +21,6 @@
 | DOMAIN-KEYWORD | 1 |
 | DOMAIN | 2 |
 | DOMAIN-SUFFIX | 31 |
-## 重复统计
-
-Adobe分流规则，与本项目其他分流规则重复情况统计。
-
-点击重复数量可以查看重复规则明细。
-
-| 名称 | 数量 | 重复 | 重合度 |
-| ---- | ---- | ---- | ------ |
-|  [Advertising](https://github.com/blackmatrix7/ios_rule_script/tree/master/rule/Clash/Advertising)    | 93876   | [6](https://github.com/blackmatrix7/ios_rule_script/tree/master/rule/Clash/Adobe/Repeat.list)   |   0.01% |
-|  [AdvertisingTest](https://github.com/blackmatrix7/ios_rule_script/tree/master/rule/Clash/AdvertisingTest)    | 110192   | [7](https://github.com/blackmatrix7/ios_rule_script/tree/master/rule/Clash/Adobe/Repeat.list)   |   0.01% |
-|  [AdvertisingLite](https://github.com/blackmatrix7/ios_rule_script/tree/master/rule/Clash/AdvertisingLite)    | 41534   | [5](https://github.com/blackmatrix7/ios_rule_script/tree/master/rule/Clash/Adobe/Repeat.list)   |   0.01% |
-|  [BlackList](https://github.com/blackmatrix7/ios_rule_script/tree/master/rule/Clash/BlackList)    | 779   | [7](https://github.com/blackmatrix7/ios_rule_script/tree/master/rule/Clash/Adobe/Repeat.list)   |   0.9% |
-|  [China](https://github.com/blackmatrix7/ios_rule_script/tree/master/rule/Clash/China)    | 579   | [2](https://github.com/blackmatrix7/ios_rule_script/tree/master/rule/Clash/Adobe/Repeat.list)   |   0.35% |
-|  [ChinaTest](https://github.com/blackmatrix7/ios_rule_script/tree/master/rule/Clash/ChinaTest)    | 73317   | [3](https://github.com/blackmatrix7/ios_rule_script/tree/master/rule/Clash/Adobe/Repeat.list)   |   0.0% |
-|  [Microsoft](https://github.com/blackmatrix7/ios_rule_script/tree/master/rule/Clash/Microsoft)    | 97   | [1](https://github.com/blackmatrix7/ios_rule_script/tree/master/rule/Clash/Adobe/Repeat.list)   |   1.03% |
-|  [Global](https://github.com/blackmatrix7/ios_rule_script/tree/master/rule/Clash/Global)    | 785   | [1](https://github.com/blackmatrix7/ios_rule_script/tree/master/rule/Clash/Adobe/Repeat.list)   |   0.13% |
-|  [Proxy](https://github.com/blackmatrix7/ios_rule_script/tree/master/rule/Clash/Proxy)    | 6016   | [8](https://github.com/blackmatrix7/ios_rule_script/tree/master/rule/Clash/Adobe/Repeat.list)   |   0.13% |
 ## 配置说明
 
 实时版：爬虫程序定时更新，更新频率高，能尽快同步数据源变化
@@ -54,6 +36,32 @@ https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash
 
 https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/release/rule/Clash/Adobe/Adobe.yaml
 
+## 重复统计
+
+
+当前分流规则，未包含其他子规则。
+
+
+当前分流规则，与本项目其他分流规则重复情况统计(点击重复数量可查看明细)。
+
+
+
+| 名称 | 数量 | 重复 | 重合度 |
+| ---- | ---- | ---- | ------ |
+|  [China](https://github.com/blackmatrix7/ios_rule_script/tree/master/rule/Clash/China)    | 656   | [2](https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Adobe/Adobe_Repeat.list)   |   0.3% |
+|  [ChinaTest](https://github.com/blackmatrix7/ios_rule_script/tree/master/rule/Clash/ChinaTest)    | 71674   | [2](https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Adobe/Adobe_Repeat.list)   |   0.0% |
+|  [Microsoft](https://github.com/blackmatrix7/ios_rule_script/tree/master/rule/Clash/Microsoft)    | 98   | [1](https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Adobe/Adobe_Repeat.list)   |   1.02% |
+|  [AdvertisingLite](https://github.com/blackmatrix7/ios_rule_script/tree/master/rule/Clash/AdvertisingLite)    | 25141   | [4](https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Adobe/Adobe_Repeat.list)   |   0.02% |
+|  [Advertising](https://github.com/blackmatrix7/ios_rule_script/tree/master/rule/Clash/Advertising)    | 56071   | [5](https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Adobe/Adobe_Repeat.list)   |   0.01% |
+|  [AdvertisingTest](https://github.com/blackmatrix7/ios_rule_script/tree/master/rule/Clash/AdvertisingTest)    | 73694   | [6](https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Adobe/Adobe_Repeat.list)   |   0.01% |
+|  [Proxy](https://github.com/blackmatrix7/ios_rule_script/tree/master/rule/Clash/Proxy)    | 27918   | [25](https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Adobe/Adobe_Repeat.list)   |   0.09% |
+|  [Global](https://github.com/blackmatrix7/ios_rule_script/tree/master/rule/Clash/Global)    | 1254   | [9](https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Adobe/Adobe_Repeat.list)   |   0.72% |
+|  [GlobalMedia](https://github.com/blackmatrix7/ios_rule_script/tree/master/rule/Clash/GlobalMedia)    | 1080   | [1](https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Adobe/Adobe_Repeat.list)   |   0.09% |
+|  [BlackList](https://github.com/blackmatrix7/ios_rule_script/tree/master/rule/Clash/BlackList)    | 769   | [7](https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Adobe/Adobe_Repeat.list)   |   0.91% |
+|  [Disney](https://github.com/blackmatrix7/ios_rule_script/tree/master/rule/Clash/Disney)    | 131   | [1](https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Adobe/Adobe_Repeat.list)   |   0.76% |
+### 特别说明
+程序在实际运算时，会根据DOMAIN、DOMAIN-SUFFIX、IP-CIDR、IP-CIDR6间的包含关系进行去重，而出于运行效率考虑，重复规则只统计纯文本匹配，所以可能与实际效果有所出入，仅供参考。
+
 ## 数据来源
 
 本项目的Adobe分流规则的数据来自以下链接，通常已涵盖所有数据来源的分流规则。如果你正在使用这些分流规则，建议不要与本项目的Adobe分流规则混合使用，以免造成规则重复。
@@ -65,19 +73,37 @@ https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/release/rule/Clas
 
 如果您有更好的分流规则，欢迎提交给我，我会将它加到数据源中继续完善。
 
+## 程序特点
+
+### 断链处理
+
+对于某些已删除或失效的数据源，继续使用本地缓存的文件，减少因为断链造成的影响。
+
+### 规则过滤
+
+通过关键字、正则、模糊匹配三种方式对规则进行过滤，以移除部分数据源中的错误规则。
+
+### 合并去重
+
+不仅对完全相同的规则进行去重，还会根据DOMAIN、DOMAIN-SUFFIX、IP-CIDR、IP-CIDR6等规则间的包含关系进行合并去重。
+
+### 域名解析
+
+对DOMAIN类型的规则进行DNS解析记录查询，丢弃连续多次无法解析的域名。
+
+### 正则合并
+
+通过程序对相似正则进行合并，不定时手动核验正则合并结果。
+
+### 正则推导
+
+通过程序对含有正则的规则，推导需要MITM的主机名，不定时手动核验推导结果。
+
+### 正则编译
+
+通过程序对正则类型的规则进行编译，去除无法通过编译的正则。
+
 ## 最后
-
-### 正则过滤
-
-爬虫程序在清洗原始规则数据时，可根据正则定向过滤规则，以达到保留特定规则的目的。经过正则过滤的规则，无法100%涵盖原始规则数据，请知悉。
-
-### 正则校验
-
-从2020年11月25日开始，爬虫程序加入对正则合法性的校验。对于无法校验通过，且不明作用的正则，直接抛弃。如果对比数据源发现正则类型的规则较少，则很大可能是错误的正则都已被过滤掉。
-
-### 黑名单
-
-爬虫程序内置部分规则黑名单，在对原始数据进行清洗时，自动将可能引起异常的黑名单规则去除。经过黑名单去除的规则，无法100%涵盖原始规则数据，请知悉。
 
 ### 完善规则
 
@@ -93,7 +119,7 @@ https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/release/rule/Clas
 
 感谢
 
-[@fiiir](https://github.com/fiiir) [@Tartarus2014](https://github.com/Tartarus2014) [@zjcfynn](https://github.com/zjcfynn) 
+[@fiiir](https://github.com/fiiir) [@Tartarus2014](https://github.com/Tartarus2014) [@zjcfynn](https://github.com/zjcfynn) [@chenyiping1995](https://github.com/chenyiping1995) 
 
 提供规则数据源及改进建议
 

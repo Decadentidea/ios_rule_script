@@ -17,8 +17,8 @@ function GetCookie(){
     let hisCookie = magicJS.read(elemeCookieKey);
     magicJS.write(elemeLongitudeKey, longitude);
     magicJS.write(elemeLatitudeKey, latitude);
-    let compareCookie2 = /cookie2=([a-zA-Z0-9]*)/.exec(cookie)[1];
-    let compareHisCookie2 = /cookie2=([a-zA-Z0-9]*)/.exec(hisCookie)[1];
+    let compareCookie2 = !!cookie? /cookie2=([a-zA-Z0-9]*)/.exec(cookie)[1]: null;
+    let compareHisCookie2 = !!hisCookie? /cookie2=([a-zA-Z0-9]*)/.exec(hisCookie)[1]: null;
     if (!!!hisCookie || compareCookie2 !== compareHisCookie2){
       magicJS.write(elemeCookieKey, cookie);
       magicJS.logInfo(`旧的Cookie：${hisCookie}\n新的Cookie：${cookie}\nCookie不同，写入新的Cookie成功！`);
@@ -83,7 +83,7 @@ function GetSuperVipMissions(cookie, longitude, latitude){
   })
 }
 
-// 接收超级会员任务列表中的任务
+// 接受超级会员任务列表中的任务
 function AcceptMission(cookie, longitude, latitude, mission_id){
   return new Promise((resolve, reject)=>{
     let options = {

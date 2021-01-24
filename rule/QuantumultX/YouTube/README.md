@@ -8,39 +8,21 @@
 
 
 
-
-最后检查时间：2020-12-08 03:34:40。
+最后检查时间：2021-01-24 03:18:12。
 
 ## 规则统计
 
-总计规则：14 条。
+总计规则：182 条。
 
 各类型规则统计：
 
 | 类型 | 数量(条) |
 | ---- | ---- |
 | USER-AGENT | 5 |
-| HOST-SUFFIX | 6 |
-| HOST | 2 |
+| HOST-SUFFIX | 173 |
 | HOST-KEYWORD | 1 |
-## 重复统计
-
-YouTube分流规则，与本项目其他分流规则重复情况统计。
-
-点击重复数量可以查看重复规则明细。
-
-| 名称 | 数量 | 重复 | 重合度 |
-| ---- | ---- | ---- | ------ |
-|  [Advertising](https://github.com/blackmatrix7/ios_rule_script/tree/master/rule/QuantumultX/Advertising)    | 93876   | [1](https://github.com/blackmatrix7/ios_rule_script/tree/master/rule/QuantumultX/YouTube/Repeat.list)   |   0.0% |
-|  [AdvertisingTest](https://github.com/blackmatrix7/ios_rule_script/tree/master/rule/QuantumultX/AdvertisingTest)    | 110192   | [2](https://github.com/blackmatrix7/ios_rule_script/tree/master/rule/QuantumultX/YouTube/Repeat.list)   |   0.0% |
-|  [AdvertisingLite](https://github.com/blackmatrix7/ios_rule_script/tree/master/rule/QuantumultX/AdvertisingLite)    | 41534   | [1](https://github.com/blackmatrix7/ios_rule_script/tree/master/rule/QuantumultX/YouTube/Repeat.list)   |   0.0% |
-|  [BlackList](https://github.com/blackmatrix7/ios_rule_script/tree/master/rule/QuantumultX/BlackList)    | 781   | [3](https://github.com/blackmatrix7/ios_rule_script/tree/master/rule/QuantumultX/YouTube/Repeat.list)   |   0.38% |
-|  [ChinaTest](https://github.com/blackmatrix7/ios_rule_script/tree/master/rule/QuantumultX/ChinaTest)    | 73331   | [1](https://github.com/blackmatrix7/ios_rule_script/tree/master/rule/QuantumultX/YouTube/Repeat.list)   |   0.0% |
-|  [Google](https://github.com/blackmatrix7/ios_rule_script/tree/master/rule/QuantumultX/Google)    | 124   | [3](https://github.com/blackmatrix7/ios_rule_script/tree/master/rule/QuantumultX/YouTube/Repeat.list)   |   2.42% |
-|  [Global](https://github.com/blackmatrix7/ios_rule_script/tree/master/rule/QuantumultX/Global)    | 825   | [9](https://github.com/blackmatrix7/ios_rule_script/tree/master/rule/QuantumultX/YouTube/Repeat.list)   |   1.09% |
-|  [GlobalMedia](https://github.com/blackmatrix7/ios_rule_script/tree/master/rule/QuantumultX/GlobalMedia)    | 279   | [14](https://github.com/blackmatrix7/ios_rule_script/tree/master/rule/QuantumultX/YouTube/Repeat.list)   |   5.02% |
-|  [Proxy](https://github.com/blackmatrix7/ios_rule_script/tree/master/rule/QuantumultX/Proxy)    | 6022   | [7](https://github.com/blackmatrix7/ios_rule_script/tree/master/rule/QuantumultX/YouTube/Repeat.list)   |   0.12% |
-|  [YouTubeMusic](https://github.com/blackmatrix7/ios_rule_script/tree/master/rule/QuantumultX/YouTubeMusic)    | 4   | [2](https://github.com/blackmatrix7/ios_rule_script/tree/master/rule/QuantumultX/YouTube/Repeat.list)   |   50.0% |
+| IP-CIDR | 2 |
+| IP6-CIDR | 1 |
 ## 配置说明
 
 实时版：爬虫程序定时更新，更新频率高，能尽快同步数据源变化
@@ -56,12 +38,36 @@ https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Quant
 
 https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/release/rule/QuantumultX/YouTube/YouTube.list
 
+## 重复统计
+
+
+当前分流规则，未包含其他子规则。
+
+
+当前分流规则，与本项目其他分流规则重复情况统计(点击重复数量可查看明细)。
+
+
+
+| 名称 | 数量 | 重复 | 重合度 |
+| ---- | ---- | ---- | ------ |
+|  [Google](https://github.com/blackmatrix7/ios_rule_script/tree/master/rule/QuantumultX/Google)    | 104   | [4](https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/QuantumultX/YouTube/YouTube_Repeat.list)   |   3.85% |
+|  [YouTubeMusic](https://github.com/blackmatrix7/ios_rule_script/tree/master/rule/QuantumultX/YouTubeMusic)    | 4   | [2](https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/QuantumultX/YouTube/YouTube_Repeat.list)   |   50.0% |
+|  [AdvertisingTest](https://github.com/blackmatrix7/ios_rule_script/tree/master/rule/QuantumultX/AdvertisingTest)    | 73694   | [1](https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/QuantumultX/YouTube/YouTube_Repeat.list)   |   0.0% |
+|  [Proxy](https://github.com/blackmatrix7/ios_rule_script/tree/master/rule/QuantumultX/Proxy)    | 27966   | [59](https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/QuantumultX/YouTube/YouTube_Repeat.list)   |   0.21% |
+|  [Global](https://github.com/blackmatrix7/ios_rule_script/tree/master/rule/QuantumultX/Global)    | 1292   | [10](https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/QuantumultX/YouTube/YouTube_Repeat.list)   |   0.77% |
+|  [GlobalMedia](https://github.com/blackmatrix7/ios_rule_script/tree/master/rule/QuantumultX/GlobalMedia)    | 1138   | [11](https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/QuantumultX/YouTube/YouTube_Repeat.list)   |   0.97% |
+|  [BlackList](https://github.com/blackmatrix7/ios_rule_script/tree/master/rule/QuantumultX/BlackList)    | 771   | [3](https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/QuantumultX/YouTube/YouTube_Repeat.list)   |   0.39% |
+### 特别说明
+程序在实际运算时，会根据DOMAIN、DOMAIN-SUFFIX、IP-CIDR、IP-CIDR6间的包含关系进行去重，而出于运行效率考虑，重复规则只统计纯文本匹配，所以可能与实际效果有所出入，仅供参考。
+
 ## 数据来源
 
 本项目的YouTube分流规则的数据来自以下链接，通常已涵盖所有数据来源的分流规则。如果你正在使用这些分流规则，建议不要与本项目的YouTube分流规则混合使用，以免造成规则重复。
 
 - https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Ruleset/YouTube.list
 - https://raw.githubusercontent.com/ConnersHua/Profiles/master/Surge/Ruleset/Media/YouTube.list
+- https://raw.githubusercontent.com/GeQ1an/Rules/master/QuantumultX/Filter/Optional/YouTube.list
+- https://raw.githubusercontent.com/LM-Firefly/Rules/master/Global-Services/YouTube.list
 - https://raw.githubusercontent.com/eHpo1/Rules/master/Surge4/Ruleset/Sub/YouTube.list
 - https://raw.githubusercontent.com/eHpo1/Rules/master/Surge4/Ruleset/Sub/YouTubeMusic.list
 - https://raw.githubusercontent.com/lhie1/Rules/master/Surge/Surge%203/Provider/Media/YouTube.list
@@ -71,19 +77,37 @@ https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/release/rule/Quan
 
 如果您有更好的分流规则，欢迎提交给我，我会将它加到数据源中继续完善。
 
+## 程序特点
+
+### 断链处理
+
+对于某些已删除或失效的数据源，继续使用本地缓存的文件，减少因为断链造成的影响。
+
+### 规则过滤
+
+通过关键字、正则、模糊匹配三种方式对规则进行过滤，以移除部分数据源中的错误规则。
+
+### 合并去重
+
+不仅对完全相同的规则进行去重，还会根据DOMAIN、DOMAIN-SUFFIX、IP-CIDR、IP-CIDR6等规则间的包含关系进行合并去重。
+
+### 域名解析
+
+对DOMAIN类型的规则进行DNS解析记录查询，丢弃连续多次无法解析的域名。
+
+### 正则合并
+
+通过程序对相似正则进行合并，不定时手动核验正则合并结果。
+
+### 正则推导
+
+通过程序对含有正则的规则，推导需要MITM的主机名，不定时手动核验推导结果。
+
+### 正则编译
+
+通过程序对正则类型的规则进行编译，去除无法通过编译的正则。
+
 ## 最后
-
-### 正则过滤
-
-爬虫程序在清洗原始规则数据时，可根据正则定向过滤规则，以达到保留特定规则的目的。经过正则过滤的规则，无法100%涵盖原始规则数据，请知悉。
-
-### 正则校验
-
-从2020年11月25日开始，爬虫程序加入对正则合法性的校验。对于无法校验通过，且不明作用的正则，直接抛弃。如果对比数据源发现正则类型的规则较少，则很大可能是错误的正则都已被过滤掉。
-
-### 黑名单
-
-爬虫程序内置部分规则黑名单，在对原始数据进行清洗时，自动将可能引起异常的黑名单规则去除。经过黑名单去除的规则，无法100%涵盖原始规则数据，请知悉。
 
 ### 完善规则
 
@@ -99,7 +123,7 @@ https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/release/rule/Quan
 
 感谢
 
-[@fiiir](https://github.com/fiiir) [@Tartarus2014](https://github.com/Tartarus2014) [@zjcfynn](https://github.com/zjcfynn) 
+[@fiiir](https://github.com/fiiir) [@Tartarus2014](https://github.com/Tartarus2014) [@zjcfynn](https://github.com/zjcfynn) [@chenyiping1995](https://github.com/chenyiping1995) 
 
 提供规则数据源及改进建议
 

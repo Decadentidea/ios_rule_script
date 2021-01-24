@@ -1,49 +1,28 @@
-# GlobalMedia
+# ChinaMedia
 
 ## 前言
 
-本项目的GlobalMedia分流规则由爬虫程序自动维护。
+本项目的ChinaMedia分流规则由爬虫程序自动维护。
 
-定时爬取互联网上开源的GlobalMedia分流规则，将其进行清洗、去重、合并、优化后，形成单一的分流规则文件，旨在解决引用大量外部规则造成规则重复的问题。
-
-
+定时爬取互联网上开源的ChinaMedia分流规则，将其进行清洗、去重、合并、优化后，形成单一的分流规则文件，旨在解决引用大量外部规则造成规则重复的问题。
 
 
-最后检查时间：2020-12-08 03:34:41。
+
+最后检查时间：2021-01-24 03:18:15。
 
 ## 规则统计
 
-总计规则：74 条。
+总计规则：299 条。
 
 各类型规则统计：
 
 | 类型 | 数量(条) |
 | ---- | ---- |
-| DOMAIN | 3 |
-| USER-AGENT | 22 |
-| DOMAIN-SUFFIX | 44 |
+| DOMAIN | 2 |
+| USER-AGENT | 35 |
+| DOMAIN-SUFFIX | 221 |
 | DOMAIN-KEYWORD | 2 |
-| IP-CIDR | 3 |
-## 重复统计
-
-GlobalMedia分流规则，与本项目其他分流规则重复情况统计。
-
-点击重复数量可以查看重复规则明细。
-
-| 名称 | 数量 | 重复 | 重合度 |
-| ---- | ---- | ---- | ------ |
-|  [Advertising](https://github.com/blackmatrix7/ios_rule_script/tree/master/rule/Loon/Advertising)    | 94187   | [1](https://github.com/blackmatrix7/ios_rule_script/tree/master/rule/Loon/ChinaMedia/Repeat.list)   |   0.0% |
-|  [AdvertisingTest](https://github.com/blackmatrix7/ios_rule_script/tree/master/rule/Loon/AdvertisingTest)    | 110503   | [1](https://github.com/blackmatrix7/ios_rule_script/tree/master/rule/Loon/ChinaMedia/Repeat.list)   |   0.0% |
-|  [AdvertisingLite](https://github.com/blackmatrix7/ios_rule_script/tree/master/rule/Loon/AdvertisingLite)    | 41837   | [1](https://github.com/blackmatrix7/ios_rule_script/tree/master/rule/Loon/ChinaMedia/Repeat.list)   |   0.0% |
-|  [AsianMedia](https://github.com/blackmatrix7/ios_rule_script/tree/master/rule/Loon/AsianMedia)    | 28   | [25](https://github.com/blackmatrix7/ios_rule_script/tree/master/rule/Loon/ChinaMedia/Repeat.list)   |   89.29% |
-|  [Bilibili](https://github.com/blackmatrix7/ios_rule_script/tree/master/rule/Loon/Bilibili)    | 13   | [13](https://github.com/blackmatrix7/ios_rule_script/tree/master/rule/Loon/ChinaMedia/Repeat.list)   |   100.0% |
-|  [China](https://github.com/blackmatrix7/ios_rule_script/tree/master/rule/Loon/China)    | 593   | [21](https://github.com/blackmatrix7/ios_rule_script/tree/master/rule/Loon/ChinaMedia/Repeat.list)   |   3.54% |
-|  [ChinaTest](https://github.com/blackmatrix7/ios_rule_script/tree/master/rule/Loon/ChinaTest)    | 73331   | [33](https://github.com/blackmatrix7/ios_rule_script/tree/master/rule/Loon/ChinaMedia/Repeat.list)   |   0.05% |
-|  [ChinaIPs](https://github.com/blackmatrix7/ios_rule_script/tree/master/rule/Loon/ChinaIPs)    | 7227   | [2](https://github.com/blackmatrix7/ios_rule_script/tree/master/rule/Loon/ChinaMedia/Repeat.list)   |   0.03% |
-|  [NetEaseMusic](https://github.com/blackmatrix7/ios_rule_script/tree/master/rule/Loon/NetEaseMusic)    | 44   | [2](https://github.com/blackmatrix7/ios_rule_script/tree/master/rule/Loon/ChinaMedia/Repeat.list)   |   4.55% |
-|  [SohuSogo](https://github.com/blackmatrix7/ios_rule_script/tree/master/rule/Loon/SohuSogo)    | 10   | [2](https://github.com/blackmatrix7/ios_rule_script/tree/master/rule/Loon/ChinaMedia/Repeat.list)   |   20.0% |
-|  [IQiyi](https://github.com/blackmatrix7/ios_rule_script/tree/master/rule/Loon/IQiyi)    | 7   | [7](https://github.com/blackmatrix7/ios_rule_script/tree/master/rule/Loon/ChinaMedia/Repeat.list)   |   100.0% |
-|  [TencentVideo](https://github.com/blackmatrix7/ios_rule_script/tree/master/rule/Loon/TencentVideo)    | 2   | [2](https://github.com/blackmatrix7/ios_rule_script/tree/master/rule/Loon/ChinaMedia/Repeat.list)   |   100.0% |
+| IP-CIDR | 39 |
 ## 配置说明
 
 实时版：爬虫程序定时更新，更新频率高，能尽快同步数据源变化
@@ -59,32 +38,143 @@ https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Loon/
 
 https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/release/rule/Loon/ChinaMedia/ChinaMedia.list
 
+## 重复统计
+
+当前分流规则，已包含以下子规则：
+
+- iQIYI
+
+- CCTV
+
+- NetEaseMusic
+
+- Douyu
+
+- Youku
+
+- TencentVideo
+
+- Himalaya
+
+- LeTV
+
+- BiliBili
+
+除非特殊需求，否则不建议重复引用。
+
+
+当前分流规则，与本项目其他分流规则重复情况统计(点击重复数量可查看明细)。
+
+
+
+| 名称 | 数量 | 重复 | 重合度 |
+| ---- | ---- | ---- | ------ |
+|  [BiliBili](https://github.com/blackmatrix7/ios_rule_script/tree/master/rule/Loon/BiliBili)    | 60   | [60](https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Loon/ChinaMedia/ChinaMedia_Repeat.list)   |   100.0% |
+|  [Baidu](https://github.com/blackmatrix7/ios_rule_script/tree/master/rule/Loon/Baidu)    | 265   | [1](https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Loon/ChinaMedia/ChinaMedia_Repeat.list)   |   0.38% |
+|  [China](https://github.com/blackmatrix7/ios_rule_script/tree/master/rule/Loon/China)    | 688   | [50](https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Loon/ChinaMedia/ChinaMedia_Repeat.list)   |   7.27% |
+|  [ChinaTest](https://github.com/blackmatrix7/ios_rule_script/tree/master/rule/Loon/ChinaTest)    | 71706   | [86](https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Loon/ChinaMedia/ChinaMedia_Repeat.list)   |   0.12% |
+|  [ChinaIPs](https://github.com/blackmatrix7/ios_rule_script/tree/master/rule/Loon/ChinaIPs)    | 6057   | [3](https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Loon/ChinaMedia/ChinaMedia_Repeat.list)   |   0.05% |
+|  [SohuSogo](https://github.com/blackmatrix7/ios_rule_script/tree/master/rule/Loon/SohuSogo)    | 10   | [2](https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Loon/ChinaMedia/ChinaMedia_Repeat.list)   |   20.0% |
+|  [CCTV](https://github.com/blackmatrix7/ios_rule_script/tree/master/rule/Loon/CCTV)    | 42   | [42](https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Loon/ChinaMedia/ChinaMedia_Repeat.list)   |   100.0% |
+|  [Tencent](https://github.com/blackmatrix7/ios_rule_script/tree/master/rule/Loon/Tencent)    | 294   | [16](https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Loon/ChinaMedia/ChinaMedia_Repeat.list)   |   5.44% |
+|  [NetEase](https://github.com/blackmatrix7/ios_rule_script/tree/master/rule/Loon/NetEase)    | 118   | [22](https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Loon/ChinaMedia/ChinaMedia_Repeat.list)   |   18.64% |
+|  [NetEaseMusic](https://github.com/blackmatrix7/ios_rule_script/tree/master/rule/Loon/NetEaseMusic)    | 28   | [28](https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Loon/ChinaMedia/ChinaMedia_Repeat.list)   |   100.0% |
+|  [Youku](https://github.com/blackmatrix7/ios_rule_script/tree/master/rule/Loon/Youku)    | 1   | [1](https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Loon/ChinaMedia/ChinaMedia_Repeat.list)   |   100.0% |
+|  [TencentVideo](https://github.com/blackmatrix7/ios_rule_script/tree/master/rule/Loon/TencentVideo)    | 2   | [1](https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Loon/ChinaMedia/ChinaMedia_Repeat.list)   |   50.0% |
+|  [iQIYI](https://github.com/blackmatrix7/ios_rule_script/tree/master/rule/Loon/iQIYI)    | 48   | [48](https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Loon/ChinaMedia/ChinaMedia_Repeat.list)   |   100.0% |
+|  [Douyu](https://github.com/blackmatrix7/ios_rule_script/tree/master/rule/Loon/Douyu)    | 10   | [10](https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Loon/ChinaMedia/ChinaMedia_Repeat.list)   |   100.0% |
+|  [Himalaya](https://github.com/blackmatrix7/ios_rule_script/tree/master/rule/Loon/Himalaya)    | 18   | [18](https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Loon/ChinaMedia/ChinaMedia_Repeat.list)   |   100.0% |
+|  [Alibaba](https://github.com/blackmatrix7/ios_rule_script/tree/master/rule/Loon/Alibaba)    | 1222   | [6](https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Loon/ChinaMedia/ChinaMedia_Repeat.list)   |   0.49% |
+|  [56](https://github.com/blackmatrix7/ios_rule_script/tree/master/rule/Loon/56)    | 10   | [2](https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Loon/ChinaMedia/ChinaMedia_Repeat.list)   |   20.0% |
+|  [AcFun](https://github.com/blackmatrix7/ios_rule_script/tree/master/rule/Loon/AcFun)    | 5   | [5](https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Loon/ChinaMedia/ChinaMedia_Repeat.list)   |   100.0% |
+|  [ChinaMobile](https://github.com/blackmatrix7/ios_rule_script/tree/master/rule/Loon/ChinaMobile)    | 28   | [3](https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Loon/ChinaMedia/ChinaMedia_Repeat.list)   |   10.71% |
+|  [HunanTV](https://github.com/blackmatrix7/ios_rule_script/tree/master/rule/Loon/HunanTV)    | 8   | [4](https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Loon/ChinaMedia/ChinaMedia_Repeat.list)   |   50.0% |
+|  [KugouKuwo](https://github.com/blackmatrix7/ios_rule_script/tree/master/rule/Loon/KugouKuwo)    | 109   | [4](https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Loon/ChinaMedia/ChinaMedia_Repeat.list)   |   3.67% |
+|  [LeTV](https://github.com/blackmatrix7/ios_rule_script/tree/master/rule/Loon/LeTV)    | 13   | [13](https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Loon/ChinaMedia/ChinaMedia_Repeat.list)   |   100.0% |
+|  [Migu](https://github.com/blackmatrix7/ios_rule_script/tree/master/rule/Loon/Migu)    | 5   | [5](https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Loon/ChinaMedia/ChinaMedia_Repeat.list)   |   100.0% |
+|  [Sohu](https://github.com/blackmatrix7/ios_rule_script/tree/master/rule/Loon/Sohu)    | 53   | [3](https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Loon/ChinaMedia/ChinaMedia_Repeat.list)   |   5.66% |
+|  [TaiheMusic](https://github.com/blackmatrix7/ios_rule_script/tree/master/rule/Loon/TaiheMusic)    | 9   | [2](https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Loon/ChinaMedia/ChinaMedia_Repeat.list)   |   22.22% |
+|  [XiamiMusic](https://github.com/blackmatrix7/ios_rule_script/tree/master/rule/Loon/XiamiMusic)    | 5   | [4](https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Loon/ChinaMedia/ChinaMedia_Repeat.list)   |   80.0% |
+|  [YYeTs](https://github.com/blackmatrix7/ios_rule_script/tree/master/rule/Loon/YYeTs)    | 21   | [7](https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Loon/ChinaMedia/ChinaMedia_Repeat.list)   |   33.33% |
+|  [YoukuTudou](https://github.com/blackmatrix7/ios_rule_script/tree/master/rule/Loon/YoukuTudou)    | 36   | [5](https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Loon/ChinaMedia/ChinaMedia_Repeat.list)   |   13.89% |
+|  [AdvertisingLite](https://github.com/blackmatrix7/ios_rule_script/tree/master/rule/Loon/AdvertisingLite)    | 25443   | [14](https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Loon/ChinaMedia/ChinaMedia_Repeat.list)   |   0.06% |
+|  [Advertising](https://github.com/blackmatrix7/ios_rule_script/tree/master/rule/Loon/Advertising)    | 56381   | [17](https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Loon/ChinaMedia/ChinaMedia_Repeat.list)   |   0.03% |
+|  [AdvertisingTest](https://github.com/blackmatrix7/ios_rule_script/tree/master/rule/Loon/AdvertisingTest)    | 74004   | [17](https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Loon/ChinaMedia/ChinaMedia_Repeat.list)   |   0.02% |
+|  [Proxy](https://github.com/blackmatrix7/ios_rule_script/tree/master/rule/Loon/Proxy)    | 27967   | [4](https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Loon/ChinaMedia/ChinaMedia_Repeat.list)   |   0.01% |
+|  [AsianMedia](https://github.com/blackmatrix7/ios_rule_script/tree/master/rule/Loon/AsianMedia)    | 27   | [24](https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Loon/ChinaMedia/ChinaMedia_Repeat.list)   |   88.89% |
+|  [WeTV](https://github.com/blackmatrix7/ios_rule_script/tree/master/rule/Loon/WeTV)    | 7   | [1](https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Loon/ChinaMedia/ChinaMedia_Repeat.list)   |   14.29% |
+### 特别说明
+程序在实际运算时，会根据DOMAIN、DOMAIN-SUFFIX、IP-CIDR、IP-CIDR6间的包含关系进行去重，而出于运行效率考虑，重复规则只统计纯文本匹配，所以可能与实际效果有所出入，仅供参考。
+
 ## 数据来源
 
-本项目的GlobalMedia分流规则的数据来自以下链接，通常已涵盖所有数据来源的分流规则。如果你正在使用这些分流规则，建议不要与本项目的GlobalMedia分流规则混合使用，以免造成规则重复。
+本项目的ChinaMedia分流规则的数据来自以下链接，通常已涵盖所有数据来源的分流规则。如果你正在使用这些分流规则，建议不要与本项目的ChinaMedia分流规则混合使用，以免造成规则重复。
 
+- https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Ruleset/CCTV.list
+- https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Ruleset/Douyu.list
+- https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Ruleset/TencentVideo.list
+- https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Ruleset/Ximalaya.list
+- https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Ruleset/Youku.list
 - https://raw.githubusercontent.com/ConnersHua/Profiles/master/Surge/Ruleset/DomesticMedia.list
+- https://raw.githubusercontent.com/DivineEngine/Profiles/master/Surge/Ruleset/StreamingMedia/Podcast/Himalaya.list
+- https://raw.githubusercontent.com/GeQ1an/Rules/master/QuantumultX/Filter/CMedia.list
+- https://raw.githubusercontent.com/LM-Firefly/Rules/master/Domestic-Services/BiliBili.list
+- https://raw.githubusercontent.com/LM-Firefly/Rules/master/Domestic-Services/BiliBili.list
+- https://raw.githubusercontent.com/LM-Firefly/Rules/master/Domestic-Services/CCTV.list
+- https://raw.githubusercontent.com/LM-Firefly/Rules/master/Domestic-Services/DouYu.list
+- https://raw.githubusercontent.com/LM-Firefly/Rules/master/Domestic-Services/LeTV.list
+- https://raw.githubusercontent.com/LM-Firefly/Rules/master/Domestic-Services/NeteaseMusic.list
+- https://raw.githubusercontent.com/LM-Firefly/Rules/master/Domestic-Services/XiMaLaYa.list
+- https://raw.githubusercontent.com/LM-Firefly/Rules/master/Domestic-Services/iQIYI.list
+- https://raw.githubusercontent.com/Mazetsz/ACL4SSR/master/Clash/NetEaseCloudMusic.list
 - https://raw.githubusercontent.com/eHpo1/Rules/master/Surge4/Ruleset/ChinaMedia.list
+- https://raw.githubusercontent.com/eHpo1/Rules/master/Surge4/Ruleset/Sub/Bilibili.list
+- https://raw.githubusercontent.com/lhie1/Rules/master/Surge/Surge%203/Provider/Media/Netease%20Music.list
 - https://raw.githubusercontent.com/lhie1/Rules/master/Surge/Surge%203/Provider/Media/Tencent%20Video.list
+- https://raw.githubusercontent.com/lhie1/Rules/master/Surge/Surge%203/Provider/Media/Tencent%20Video.list
+- https://raw.githubusercontent.com/lhie1/Rules/master/Surge/Surge%203/Provider/Media/iQiyi.list
+- https://raw.githubusercontent.com/nzw9314/QuantumultX/master/NeteaseMusic.list
+- https://raw.githubusercontent.com/sve1r/Rules-For-Quantumult-X/develop/Rules/Media/Domestic/Bilibili.list
+- https://raw.githubusercontent.com/sve1r/Rules-For-Quantumult-X/develop/Rules/Media/Domestic/Tencent.list
+- https://raw.githubusercontent.com/sve1r/Rules-For-Quantumult-X/develop/Rules/Media/Domestic/iQiyi.list
+- https://raw.githubusercontent.com/sve1r/Rules-For-Quantumult-X/develop/Rules/Media/DomesticMedia.list
 
 
 感谢以上分流规则作者的辛勤付出（排名不分先后）。
 
 如果您有更好的分流规则，欢迎提交给我，我会将它加到数据源中继续完善。
 
+## 程序特点
+
+### 断链处理
+
+对于某些已删除或失效的数据源，继续使用本地缓存的文件，减少因为断链造成的影响。
+
+### 规则过滤
+
+通过关键字、正则、模糊匹配三种方式对规则进行过滤，以移除部分数据源中的错误规则。
+
+### 合并去重
+
+不仅对完全相同的规则进行去重，还会根据DOMAIN、DOMAIN-SUFFIX、IP-CIDR、IP-CIDR6等规则间的包含关系进行合并去重。
+
+### 域名解析
+
+对DOMAIN类型的规则进行DNS解析记录查询，丢弃连续多次无法解析的域名。
+
+### 正则合并
+
+通过程序对相似正则进行合并，不定时手动核验正则合并结果。
+
+### 正则推导
+
+通过程序对含有正则的规则，推导需要MITM的主机名，不定时手动核验推导结果。
+
+### 正则编译
+
+通过程序对正则类型的规则进行编译，去除无法通过编译的正则。
+
 ## 最后
-
-### 正则过滤
-
-爬虫程序在清洗原始规则数据时，可根据正则定向过滤规则，以达到保留特定规则的目的。经过正则过滤的规则，无法100%涵盖原始规则数据，请知悉。
-
-### 正则校验
-
-从2020年11月25日开始，爬虫程序加入对正则合法性的校验。对于无法校验通过，且不明作用的正则，直接抛弃。如果对比数据源发现正则类型的规则较少，则很大可能是错误的正则都已被过滤掉。
-
-### 黑名单
-
-爬虫程序内置部分规则黑名单，在对原始数据进行清洗时，自动将可能引起异常的黑名单规则去除。经过黑名单去除的规则，无法100%涵盖原始规则数据，请知悉。
 
 ### 完善规则
 
@@ -96,11 +186,11 @@ https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/release/rule/Loon
 4. 在使用分流规则时出现异常
 5. 有其他问题
 
-欢迎通过[issues](https://github.com/blackmatrix7/ios_rule_script/issues/new)提交反馈，共同完善本项目的GlobalMedia分流规则。
+欢迎通过[issues](https://github.com/blackmatrix7/ios_rule_script/issues/new)提交反馈，共同完善本项目的ChinaMedia分流规则。
 
 感谢
 
-[@fiiir](https://github.com/fiiir) [@Tartarus2014](https://github.com/Tartarus2014) [@zjcfynn](https://github.com/zjcfynn) 
+[@fiiir](https://github.com/fiiir) [@Tartarus2014](https://github.com/Tartarus2014) [@zjcfynn](https://github.com/zjcfynn) [@chenyiping1995](https://github.com/chenyiping1995) 
 
 提供规则数据源及改进建议
 
